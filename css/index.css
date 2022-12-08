@@ -20,7 +20,7 @@ body {
 	bottom: 0;
 	/*margin-bottom: 8px;*/
 }
-#footage > #info 
+#footage > #info {
 	font-style: italic;
 	font-size: 10px;
 	color: #969696;
