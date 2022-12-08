@@ -3,24 +3,24 @@ body {
 	margin: 0px;
 	height: 100%;
 	background: #000000;
-}
-
-body {
+	
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
 }
+
+
 #cataas-img {
 	margin: auto;
 }
 
-.footage {
+.jungle {
 	position: absolute;
 	bottom: 0;
 	/*margin-bottom: 8px;*/
 }
-.footage > #info {
+.jungle > #info {
 	font-style: italic;
 	font-size: 10px;
 	color: #969696;
