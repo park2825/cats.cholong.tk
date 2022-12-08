@@ -14,18 +14,13 @@ body {
 #cataas-img {
 	margin: auto;
 }
-#error-msg {
-	display: none;
-	color: white;
-}
 
 #footage {
 	position: absolute;
 	bottom: 0;
 	/*margin-bottom: 8px;*/
 }
-#footage > #info {
-	display: none;
+#footage > #info 
 	font-style: italic;
 	font-size: 10px;
 	color: #969696;
