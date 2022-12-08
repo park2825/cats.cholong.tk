@@ -1,0 +1,32 @@
+@charset "UTF-8";
+body {
+	margin: 0px;
+	height: 100%;
+	background: #000000;
+}
+
+#app {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+#httpcat-img {
+	margin: auto;
+}
+#error-msg {
+	display: none;
+	color: white;
+}
+
+#footage {
+	position: absolute;
+	bottom: 0;
+	/*margin-bottom: 8px;*/
+}
+#footage > #info {
+	display: none;
+	font-style: italic;
+	font-size: 10px;
+	color: #969696;
+}
