@@ -1,25 +1,41 @@
 $(document).ready(function(){
     $(document).bind('keydown', function(e){
         if(e.keyCode == 123) {
-            alert('사이트 보호를위해 개발자도구 사용을 금지합니다.');
+            swal({
+                title: '경고!',
+                text: '사이트 보호를 위해 개발자도구를 사용하실수 없습니다.',
+                icon: 'warning'
+                )}
             e.preventDefault();
             e.returnValue = false;
         }
         
         if(e.keyCode == 17) {
-            alert('개발자 도구 사용방지를 위해 ctrl키를 사용할수 없습니다.');
+           swal({
+                title: '경고!',
+                text: '사이트 보호를 위해 ctrl키를 사용하실수 없습니다.',
+                icon: 'warning'
+                )}
             e.preventDefault();
             e.returnValue = false;
         }
         
         if(e.keyCode == 16) {
-            alert('개발자도구 사용방지를 위해 shift키를 사용할수 없습니다.');
+            swal({
+                title: '경고!',
+                text: '사이트 보호를 위해 shift키를 사용하실수 없습니다.',
+                icon: 'warning'
+                )}
             e.preventDefault();
             e.returnValue = false;
         }
         
         if(e.keyCode == 73) {
-            alert('개발자도구 사용방지를 위해 i키를 사용할수 없습니다.');
+            swal({
+                title: '경고!',
+                text: '사이트 보호를 위해 i키를 사용하실수 없습니다.',
+                icon: 'warning'
+                )}
             e.preventDefault();
             e.returnValue = false;
         }
@@ -32,10 +48,14 @@ document.onmousedown=disableclick;
 
 function disableclick(e){
     if(e.button==2) {
-        alert('저작권 보호를위해 우클릭은 사용하실수 없습니다.');
+        swal({
+                title: '경고!',
+                text: '이미지 저작권 보호를위해 우클릭을 사용할수 없습니다.',
+                icon: 'warning'
+                )}
         return false;
     }
 }
 
 document.ondragstart = 
-    function(){alert('저작권 방지를위해 드래그는 사용하실수 없습니다.'); return false;}
+    function(){swal({title: '경고!',text: '사이트 보호를 위해 드래그를 사용할수 없습니다.',icon: 'warning')}; return false;}
