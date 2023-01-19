@@ -5,7 +5,7 @@ $(document).ready(function(){
                 title: '경고!',
                 text: '사이트 보호를 위해 개발자도구를 사용하실수 없습니다.',
                 icon: 'warning'
-            });
+                });
             e.preventDefault();
             e.returnValue = false;
         }
