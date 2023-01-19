@@ -53,8 +53,7 @@ function disableclick(e){
                 text: '이미지 저작권 보호를위해 우클릭을 사용할수 없습니다.',
                 icon: 'warning'
                 });
-        e.preventDefault();
-        e.returnValue = false;
+        return false;
     }
 }
 
