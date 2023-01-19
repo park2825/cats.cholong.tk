@@ -7,3 +7,12 @@ $(document).ready(function(){
         }
     });
 });
+
+document.onmousedown=disableclick;
+
+function disableclick(event){
+    if(event.button==2) {
+        alert('사진 저작권 보호를 위해 우클릭은 사용하실수 없습니다.');
+        return false;
+    }
+}
