@@ -5,7 +5,7 @@ $(document).ready(function(){
                 title: '경고!',
                 text: '사이트 보호를 위해 개발자도구를 사용하실수 없습니다.',
                 icon: 'warning'
-                )}
+                )};
             e.preventDefault();
             e.returnValue = false;
         }
@@ -15,7 +15,7 @@ $(document).ready(function(){
                 title: '경고!',
                 text: '사이트 보호를 위해 ctrl키를 사용하실수 없습니다.',
                 icon: 'warning'
-                )}
+                )};
             e.preventDefault();
             e.returnValue = false;
         }
@@ -25,7 +25,7 @@ $(document).ready(function(){
                 title: '경고!',
                 text: '사이트 보호를 위해 shift키를 사용하실수 없습니다.',
                 icon: 'warning'
-                )}
+                )};
             e.preventDefault();
             e.returnValue = false;
         }
@@ -35,7 +35,7 @@ $(document).ready(function(){
                 title: '경고!',
                 text: '사이트 보호를 위해 i키를 사용하실수 없습니다.',
                 icon: 'warning'
-                )}
+                )};
             e.preventDefault();
             e.returnValue = false;
         }
@@ -52,7 +52,7 @@ function disableclick(e){
                 title: '경고!',
                 text: '이미지 저작권 보호를위해 우클릭을 사용할수 없습니다.',
                 icon: 'warning'
-                )}
+                )};
         return false;
     }
 }
