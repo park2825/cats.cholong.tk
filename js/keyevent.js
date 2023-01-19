@@ -59,4 +59,4 @@ function disableclick(e){
 }
 
 document.ondragstart = 
-    function(){swal({title: '경고!',text: '사이트 보호를 위해 드래그를 사용할수 없습니다.',icon: 'warning'}); return false;}
+    function(){swal({title: '경고!',text: '이미지 저작권 를 위해 드래그를 사용할수 없습니다.',icon: 'warning'}); return false;}
