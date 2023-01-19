@@ -5,12 +5,24 @@ $(document).ready(function(){
             e.preventDefault();
             e.returnValue = false;
         }
-        $(document).bind('keydown', function(e){
-            if(e.keyCode == 17) {
-                alert('개발자 도구 사용방지를 위해 ctrl키를 사용할수 없습니다.');
-                e.preventDefault();
-                e.returnValue = false;
-            }
+        
+        if(e.keyCode == 17) {
+            alert('개발자 도구 사용방지를 위해 ctrl키를 사용할수 없습니다.');
+            e.preventDefault();
+            e.returnValue = false;
+        }
+        
+        if(e.keyCode == 16) {
+            alert('개발자도구 사용방지를 위해 shift키를 사용할수 없습니다.');
+            e.preventDefault();
+            e.returnValue = false;
+        }
+        
+        if(e.keyCode == 73) {
+            alert('개발자도구 사용방지를 위해 i키를 사용할수 없습니다.');
+            e.preventDefault();
+            e.returnValue = false;
+        }
     });
 });
 
