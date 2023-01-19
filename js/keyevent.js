@@ -12,7 +12,16 @@ document.onmousedown=disableclick;
 
 function disableclick(e){
     if(e.button==2) {
-        alert('저작권 보호를 위해 우클릭은 사용하실수 없습니다.');
+        alert('저작권 보호를위해 우클릭은 사용하실수 없습니다.');
+        return false;
+    }
+}
+
+document.ondrage = drage;
+
+function drage(drage){
+    if(drage){
+        alert('저작권 보호를위해 이미지를 드래그할수 없습니다.');
         return false;
     }
 }
