@@ -17,11 +17,11 @@ function disableclick(e){
     }
 }
 
-document.ondrage = drage;
+document.ondragstart = drag;
 
-function drage(drage){
-    if(drage){
-        alert('저작권 보호를위해 이미지를 드래그할수 없습니다.');
+function drag(d) {
+    if(d){
+        alert('저작권 보호를 위해 이미지를 드래그할수 없습니다.');
         return false;
     }
 }
