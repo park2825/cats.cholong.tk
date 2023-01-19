@@ -17,7 +17,9 @@ function disableclick(e){
     }
 }
 
-$(document).on("dragstart", function(e){
+document.onselectstart = drage;
+
+function drage() {
     alert('저작권 보호를 위해 드래그 사용을 금지합니다.')
     return false;
-});
+}
