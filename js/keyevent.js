@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(document).bind('keydown', 'mousedown', function(e){
+    $(document).bind('keydown', function(e){
         if(e.keyCode == 123) {
             swal({
                 title: '경고!',
@@ -39,18 +39,23 @@ $(document).ready(function(){
             e.preventDefault();
             e.returnValue = false;
         }
-        
-        if(e.button == 2){
-            swal({
+    });
+});
+
+
+
+document.onmousedown=disableclick;
+
+function disableclick(e){
+    if(e.button==2) {
+        swal({
                 title: '경고!',
-                text: '이미지 저작권보호를 위해 우클릭을 사용할수 없습니다.',
+                text: '이미지 저작권 보호를위해 우클릭을 사용할수 없습니다.',
                 icon: 'warning'
                 });
-            e.preventDefault();
-            e.returnValue = false;
-    });
-    
-});
+        return false;
+    }
+}
 
 document.ondragstart = 
     function(){swal({title: '경고!',text: '이미지 저작권 를 위해 드래그를 사용할수 없습니다.',icon: 'warning'}); return false;}
