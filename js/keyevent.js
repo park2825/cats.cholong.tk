@@ -17,11 +17,5 @@ function disableclick(e){
     }
 }
 
-document.ondragstart = drag;
-
-function drag(d) {
-    if(d){
-        alert('저작권 보호를 위해 이미지를 드래그할수 없습니다.');
-        return false;
-    }
-}
+document.ondragstart = 
+    function(){alert('저작권 방지를위해 드래그는 사용하실수 없습니다.'); return false;}
