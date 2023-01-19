@@ -17,9 +17,4 @@ function disableclick(e){
     }
 }
 
-document.onselectstart = drage;
-
-function drage() {
-    alert('저작권 보호를 위해 드래그 사용을 금지합니다.')
-    return false;
-}
+document.onselectstart = function(){alert('저작권 방지를위해 드래그는 사용하실수 없습니다.') return false;}
