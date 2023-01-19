@@ -42,7 +42,7 @@ $(document).ready(function(){
     });
     
     $(document).bind('mousedown', function(m){
-        if(e.button==2) {
+        if(m.button==2) {
             swal({
                 title: '경고!',
                 text: '이미지 저작권 보호를위해 우클릭을 사용할수 없습니다.',
