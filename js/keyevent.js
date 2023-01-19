@@ -10,9 +10,14 @@ $(document).ready(function(){
 
 document.onmousedown=disableclick;
 
-function disableclick(event){
-    if(event.button==2) {
-        alert('사진 저작권 보호를 위해 우클릭은 사용하실수 없습니다.');
+function disableclick(e){
+    if(e.button==2) {
+        alert('저작권 보호를 위해 우클릭은 사용하실수 없습니다.');
         return false;
     }
 }
+
+$(document).on("dragstart", function(e){
+    alert('저작권 보호를 위해 드래그 사용을 금지합니다.')
+    return false;
+});
