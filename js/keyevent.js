@@ -53,7 +53,7 @@ $(document).ready(function(){
 		event.preventDefault();
 		swal({
 			title: '경고!',
-			text: '이미지 저작권 를 위해 드래그를 사용할수 없습니다.',
+			text: '이미지 저작권 보호를 위해 드래그를 사용할수 없습니다.',
 			icon: 'warning'
 		});
 		return false;
