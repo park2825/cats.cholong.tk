@@ -40,7 +40,7 @@ $(document).ready(function(){
 			return false;
         }
     });
-   	$(document).on('contextmenu', event => {
+   	$(document.body).on('contextmenu', event => {
 		event.preventDefault();
         swal({
                 title: '경고!',
@@ -49,7 +49,7 @@ $(document).ready(function(){
         });
 		return false;
 	});
-	$(document).on('dragstart', event => {
+	$(document.body).on('dragstart', event => {
 		event.preventDefault();
 		swal({
 			title: '경고!',
