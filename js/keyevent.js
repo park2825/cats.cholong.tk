@@ -19,17 +19,6 @@ $(document).ready(() => {
 			return false;
 		}
 	});
-	$catImage.on('keydown', event => {
-		if(blockedKeys.hasOwnProperty(event.keyCode)) {
-			swal({
-				title: "경고!",
-				text: `사이트 보호를 위해 ${blockedKeys[event.keyCode].name}를 사용하실수 없습니다.`,
-				icon: 'warning'
-			});
-			event.preventDefault();
-			return false;
-		}
-	});
    	$catImage.on('contextmenu', event => {
 		swal({
 			title: '경고!',
