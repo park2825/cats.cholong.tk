@@ -8,7 +8,7 @@ $(document).ready(() => {
 					text: '사이트 보호를 위해 개발자도구를 사용하실수 없습니다.',
 					icon: 'warning'
 				});
-				e.preventDefault();
+				event.preventDefault();
 				return false;
 			};
 			case 17: {
@@ -17,7 +17,7 @@ $(document).ready(() => {
 					text: '사이트 보호를 위해 ctrl키를 사용하실수 없습니다.',
 					icon: 'warning'
 				});
-				e.preventDefault();
+				event.preventDefault();
 				return false;
 			};
 			case 16: {
@@ -26,7 +26,7 @@ $(document).ready(() => {
 					text: '사이트 보호를 위해 shift키를 사용하실수 없습니다.',
 					icon: 'warning'
 				});
-				e.preventDefault();
+				event.preventDefault();
 				return false;
 			};
 			case 73: {
@@ -35,7 +35,7 @@ $(document).ready(() => {
 					text: '사이트 보호를 위해 i키를 사용하실수 없습니다.',
 					icon: 'warning'
 				});
-				e.preventDefault();
+				event.preventDefault();
 				return false;
 			};
 		};
