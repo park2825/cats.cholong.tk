@@ -1,13 +1,14 @@
 $(document).ready(() => {
 	const $catImage = $("#cataas-img");
+	const blockedKeys = {
+		123: {name: "개발자 도구"},
+		17: {name: "ctrl키"},
+		16: {name: "shift키"},
+		73: {name: "i키"}
+	};
+	
+	
 	$(document).on('keydown', event => {
-		const blockedKeys = {
-			123: {name: "개발자 도구"},
-			17: {name: "ctrl키"},
-			16: {name: "shift키"},
-			73: {name: "i키"}
-		};
-		
 		if(blockedKeys.hasOwnProperty(event.keyCode)) {
 			swal({
 				title: "경고!",
@@ -18,7 +19,17 @@ $(document).ready(() => {
 			return false;
 		}
 	});
-	
+	$catImage.on('keydown', event => {
+		if(blockedKeys.hasOwnProperty(event.keyCode)) {
+			swal({
+				title: "경고!",
+				text: `사이트 보호를 위해 ${blockedKeys[event.keyCode].name}를 사용하실수 없습니다.`,
+				icon: 'warning'
+			});
+			event.preventDefault();
+			return false;
+		}
+	});
    	$catImage.on('contextmenu', event => {
 		swal({
 			title: '경고!',
