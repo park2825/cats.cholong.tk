@@ -1,44 +1,22 @@
 $(document).ready(() => {
 	const $catImage = $("#cataas-img");
 	$(document).on('keydown', event => {
-		switch(event.keyCode) {
-			case 123: {
-				swal({
-					title: '경고!',
-					text: '사이트 보호를 위해 개발자도구를 사용하실수 없습니다.',
-					icon: 'warning'
-				});
-				event.preventDefault();
-				return false;
-			};
-			case 17: {
-				swal({
-					title: '경고!',
-					text: '사이트 보호를 위해 ctrl키를 사용하실수 없습니다.',
-					icon: 'warning'
-				});
-				event.preventDefault();
-				return false;
-			};
-			case 16: {
-				swal({
-					title: '경고!',
-					text: '사이트 보호를 위해 shift키를 사용하실수 없습니다.',
-					icon: 'warning'
-				});
-				event.preventDefault();
-				return false;
-			};
-			case 73: {
-				swal({
-					title: '경고!',
-					text: '사이트 보호를 위해 i키를 사용하실수 없습니다.',
-					icon: 'warning'
-				});
-				event.preventDefault();
-				return false;
-			};
+		const keyDict = {
+			123: {name: "개발자 도구"},
+			17: {name: "ctrl키"},
+			16: {name: "shift키"},
+			73: {name: "i키"}
 		};
+		
+		if(keyDict.hasOwnProperty(event.keyCode)) {
+			swal({
+				title: "경고!",
+				text: `사이트 보호를 위해 ${keyDict[event.keyCode].name}를 사용하실수 없습니다.`,
+				icon: 'warning'
+			});
+			event.preventDefault();
+			return false;
+		}
 	});
 	
    	$catImage.on('contextmenu', event => {
