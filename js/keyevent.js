@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(document).body('keydown', function(e){
+    $(document).bind('keydown', function(e){
         if(e.keyCode == 123) {
             swal({
                 title: '경고!',
