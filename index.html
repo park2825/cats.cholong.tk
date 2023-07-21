@@ -3,16 +3,14 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<title>랜덤고양이사진</title>
-		<script type="text/javascript" src="/js/lib/jquery-3.6.0.slim.min.js" ></script>
-		<script src="./js/keyevent.js"></script>
-		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+		<script type="text/javascript" src="/js/lib/requirejs-2.3.6.min.js"></script>
+		<script type="text/javascript" src="/requirejs.config.js"></script>
+		<script type="text/javascript" data-main="js/main" src="/js/index.js"></script>
+
 		<link type="text/css" rel="stylesheet" href="/css/index.css" />
 	</head>
 	<body>
 		<img src="https://cataas.com/cat/cute" id="cataas-img"/>
-		<div class="jungle">
-			<p id="info">이 페이지를 API로 사용할 경우 작동하지 않을 수 있습니다.</p>
-		</div>
-		<script type="text/javascript" src="/js/index.js"></script>
 	</body>
 </html>
