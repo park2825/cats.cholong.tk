@@ -9,7 +9,7 @@ $(document).ready(() => {
 	
 	
 	$(document).on('keydown', event => {
-		if(blockedKeys.hasOwnProperty(event.keyCode)) {
+		if(event.keyCode in blockedKeys) {
 			swal({
 				title: "경고!",
 				text: `사이트 보호를 위해 ${blockedKeys[event.keyCode].name}를 사용하실수 없습니다.`,
