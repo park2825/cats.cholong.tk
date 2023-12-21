@@ -1,9 +1,9 @@
 define(
 	[
 		'require',
-		
-		'lib/utils',
 		'jquery.slim',
+
+		"lib/utils",
 	],
 	(_, utils) => {
 		const $catImage = $("#cataas-img");

@@ -1,10 +1,10 @@
 define(
 	[
 		'require',
-
-		'lib/utils',
 		'jquery.slim',
-		'sweetalert',
+		'sweetalert2',
+		
+		"lib/utils",
 	],
 	(_) => {
 		const $catImage = $("#cataas-img");
@@ -14,7 +14,6 @@ define(
 			16: {name: "shift키"},
 			73: {name: "i키"}
 		};
-
 
 		$(document).on('keydown', event => {
 			if(event.keyCode in blockedKeys) {
@@ -27,6 +26,7 @@ define(
 				return false;
 			}
 		});
+
 		$catImage.on('contextmenu', event => {
 			swal({
 				title: "경고!",
@@ -36,6 +36,7 @@ define(
 			event.preventDefault();
 			return false;
 		});
+
 		$catImage.on('dragstart', event => {
 			swal({
 				title: "경고!",
